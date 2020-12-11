@@ -1,0 +1,38 @@
+
+git status
+
+git add --a
+
+git commit -m ""
+
+git log // all changes or commit info
+
+rm -rf .git // remove .git repository
+
+
+git config --global alias.<short_name> <command_name>
+git config --global alias.st status
+
+
+git merge <branch_name>
+git merge development
+
+
+git checkout -b <name of the branch you want ot create>  // for creating new branch
+git checkout -b development
+
+git checkout <branch name>
+git checkout master   // before changing the branch make sure staus should be clean no modified files should be there..................
+git checkout development
+
+
+
+master is the default branch
+
+git branch // show all branches
+git branch -v // last commit with their message
+git branch --merged  // show already merged branches
+git branch --no-merged // not already merged branches
+
+git branch -d development // gives an error if development branch is not merged.
+git branch -D development // no error branch gets deleted.......
